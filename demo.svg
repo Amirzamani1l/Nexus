@@ -1,0 +1,80 @@
+<svg width="720" height="420" viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+  .mono { font-family: 'Fira Code', 'Consolas', monospace; }
+  .title { font-size: 14px; font-weight: 700; fill: #22c55e; }
+  .head { font-size: 12px; font-weight: 700; fill: #9fb3c8; }
+  .cell { font-size: 12px; fill: #d6e0e8; }
+  .cell-alert { font-size: 12px; fill: #ffffff; font-weight: 700; }
+  .pulse { animation: p 1.6s ease-in-out infinite; }
+  @keyframes p { 0%,100%{opacity:1} 50%{opacity:.35} }
+</style>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+  <feGaussianBlur stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+
+<rect x="0" y="0" width="720" height="420" rx="12" fill="#0b0f14"/>
+<rect x="0" y="0" width="720" height="34" rx="12" fill="#151b22"/>
+<rect x="0" y="22" width="720" height="12" fill="#151b22"/>
+<circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+<circle cx="42" cy="17" r="6" fill="#febc2e"/>
+<circle cx="62" cy="17" r="6" fill="#28c840"/>
+<text x="360" y="21" text-anchor="middle" class="mono" font-size="12" fill="#8a96a3">nexus — network guardian</text>
+
+<rect x="20" y="52" width="680" height="30" rx="4" fill="none" stroke="#22c55e" stroke-width="1"/>
+<text x="36" y="72" class="mono title">Nexus — Network Guardian  (last scan: 14:32:07)</text>
+
+<g class="mono head">
+<text x="36" y="106">MAC ADDRESS</text>
+<text x="220" y="106">IP</text>
+<text x="340" y="106">LABEL</text>
+<text x="480" y="106">FIRST SEEN</text>
+<text x="600" y="106">LAST SEEN</text>
+</g>
+<line x1="20" y1="114" x2="700" y2="114" stroke="#233242" stroke-width="1"/>
+
+<g class="mono cell">
+<text x="36" y="140">a4:83:e7:2f:11:9c</text>
+<text x="220" y="140">192.168.1.2</text>
+<text x="340" y="140">router</text>
+<text x="480" y="140">2026-07-01</text>
+<text x="600" y="140">14:32:07</text>
+</g>
+<line x1="20" y1="152" x2="700" y2="152" stroke="#1a222b" stroke-width="1"/>
+
+<g class="mono cell">
+<text x="36" y="176">d0:52:a8:00:5a:11</text>
+<text x="220" y="176">192.168.1.14</text>
+<text x="340" y="176">amir-laptop</text>
+<text x="480" y="176">2026-07-01</text>
+<text x="600" y="176">14:32:07</text>
+</g>
+<line x1="20" y1="188" x2="700" y2="188" stroke="#1a222b" stroke-width="1"/>
+
+<g class="mono cell">
+<text x="36" y="212">9c:35:eb:44:8b:02</text>
+<text x="220" y="212">192.168.1.9</text>
+<text x="340" y="212">nas-server</text>
+<text x="480" y="212">2026-07-03</text>
+<text x="600" y="212">14:32:07</text>
+</g>
+<line x1="20" y1="224" x2="700" y2="224" stroke="#1a222b" stroke-width="1"/>
+
+<rect class="pulse" x="20" y="234" width="680" height="34" fill="#2a0d0d" filter="url(#glow)"/>
+<g class="mono cell-alert">
+<text x="36" y="256">3e:aa:0c:71:9f:d4</text>
+<text x="220" y="256">192.168.1.187</text>
+<text x="340" y="256" fill="#fca5a5">unnamed device</text>
+<text x="480" y="256">14:32:07</text>
+<text x="600" y="256">14:32:07</text>
+</g>
+
+<rect class="pulse" x="20" y="290" width="200" height="24" rx="12" fill="#dc2626" filter="url(#glow)"/>
+<text x="120" y="306" text-anchor="middle" class="mono" font-size="12" font-weight="700" fill="#ffffff">🚨 NEW DEVICE DETECTED</text>
+
+<text x="20" y="350" class="mono" font-size="11" fill="#6b7f91">🚨 New device joined the network</text>
+<text x="20" y="368" class="mono" font-size="11" fill="#6b7f91">IP: 192.168.1.187  MAC: 3e:aa:0c:71:9f:d4</text>
+<text x="20" y="386" class="mono" font-size="11" fill="#6b7f91">→ sent to Telegram</text>
+</svg>
