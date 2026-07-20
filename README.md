@@ -26,16 +26,16 @@ This is the same core idea behind rogue-device detection in real network securit
 ## How it works
 
 ```
-┌───────────────┐     ┌────────────────────┐     ┌───────────────────┐
-│  ARP Scan     │────▶│  Registry Diff      │────▶│  Live Dashboard    │
-│  (scapy)      │     │  (known_devices     │     │  (rich TUI)        │
-│               │     │   .json)            │     │                    │
-└───────────────┘     └────────────────────┘     └───────────────────┘
+┌───────────────┐      ┌────────────────────┐      ┌───────────────────┐
+│  ARP Scan     │────▶ │  Registry Diff     │────▶│  Live Dashboard   │
+│  (scapy)      │      │  (known_devices    │      │  (rich TUI)       │
+│               │      │   .json)           │      │                   │
+└───────────────┘      └────────────────────┘      └───────────────────┘
                                 │
                                 ▼
                      ┌────────────────────┐
-                     │  New device found?  │
-                     │  → Telegram alert    │
+                     │  New device found? │
+                     │  → Telegram alert  │
                      └────────────────────┘
 ```
 
