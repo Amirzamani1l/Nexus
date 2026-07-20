@@ -18,7 +18,7 @@ This is the same core idea behind rogue-device detection in real network securit
 ## See it in action
 
 <div align="center">
-<img src="assets/demo.svg" width="640"/>
+<img src="demo.svg" width="640"/>
 </div>
 
 <p align="center"><i>known devices sit quiet in the table — an unrecognized one lights up red and triggers an alert</i></p>
