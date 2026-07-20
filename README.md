@@ -106,6 +106,3 @@ nexus/
 - Renaming a device is manual for now: open `known_devices.json` and edit the `"label"` field for any MAC you recognize
 - Runs great on a Raspberry Pi sitting on your network 24/7, which is honestly the best way to use it
 
-## License
-
-MIT — do whatever you want with it.
